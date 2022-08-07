@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    line-height: 46px;    
+    top:0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+#header .nav {
+    display: inline-block;
+}
+
+#header .nav > li {
+    display: inline-block;
+    position: relative;
+    margin-left: -5px;
+}
+
+#header .nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+#header .nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 24px;
+}
+
+#header .nav .down_icon {
+    font-size: 13px;
+}
+
+
+#header .subnav {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left:0;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+
+#header .subnav li {
+    width: 100%;
+    list-style-type: none;
+}
+
+#header .subnav a {
+    color: #000;
+}
+
+#header .subnav li:hover a {
+    background-color: #ccc;
+    display: block;
+}
+
+#header .nav li:hover .subnav {
+    display: inline-block;
+}
+
+#header .search_btn {
+    display: inline-block;
+    float:right;
+    height: 46px;
+}
+
+#header .search_btn .search_icon {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 15px;
+    font-weight: bolder;
+}
+
+#header .search_btn .search_icon:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    background: url(/assets/img/slider/newyork.jpg) top center / cover no-repeat;
+    padding-top: 50%;
+    z-index: 0;
+    margin-top: 46px;
+    position: relative;
+}
+
+#slider .slider_content {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    padding-bottom: 47px;
+}
+
+#slider .slider_content .slogan{
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 25px;
+    letter-spacing: 4px;
+}
+
+#slider .slider_content .description {
+    color: #fff;
+    font-size: 15px;
+    word-spacing: 3px;
+}
+
+#content {
+
+}
+
+#content .content_section {
+    padding: 64px 16px;
+    margin: 0 13%;
+}
+
+#content .content_section .band_heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 10px 0px;
+}
+
+#content .content_section .band_subheading {
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    padding: 15px 0px;
+}
+
+#content .content_section .band_content {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 15px 0px;
+}
+
+#content .band_member_list {
+    /* padding-left: 55px; */
+    text-align: center;
+
+}
+
+.content_section .band_member_list .member {
+    display: block;
+    float: left;
+    /* margin: 0px 52px; */
+    width: 33.33%;
+}
+
+.band_member_list .member .member_name {
+    color: #000;
+    font-size: 15px;
+    width:154px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.band_member_list .member .member_img {
+    width:154px;
+    height:154px;
+    border-radius: 5px;
+}
+
+.tour_section {
+    clear:both;
+    background-color: #000;
+    height: 1000px;
+}
+
+#footer {
+
+}
