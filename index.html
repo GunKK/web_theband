@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/sytle.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -126,7 +126,7 @@
                                 <div class="place_decription">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <a href="#" class="place_btn">Buy Tickets</a>
+                                <button class="place_btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place_item">
@@ -141,7 +141,7 @@
                                 <div class="place_decription">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <a href="#" class="place_btn">Buy Tickets</a>
+                                <button class="place_btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place_item">
@@ -156,7 +156,7 @@
                                 <div class="place_decription">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <a href="#" class="place_btn">Buy Tickets</a>
+                                <button class="place_btn js-buy-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -165,12 +165,107 @@
             </div>
 
             <div class="contact_section">
-
+                <div class="heading">
+                    Contact
+                </div>
+                <div class="subheading">
+                    Fan? Drop a note!
+                </div>
+                <div class="contact_content">
+                    <div class="contact_info">
+                        <i class="ti-location-pin"></i> Chicago, US <br>
+                        <i class="ti-mobile"></i> Phone: +00 151515 <br>
+                        <i class="ti-email"></i>  Email: mail@mail.com
+                    </div>
+                    <form action="" method="POST" class="contact_form">
+                        <div class="form-info">
+                            <input type="text" class="contact-name" required placeholder="Name">
+                            <input type="email" class="contact-email" required placeholder="Email">
+                            <div class="clear"></div>
+                        </div>
+                        <input type="text" class="contact-message" required placeholder="Message"> <br>
+                        <input type="submit" value="SEND" class="contact-btn">
+                        <div class="clear"></div>
+                    </form>
+                    <div class="clear"></div>
+                </div>
             </div>
+            <img src="./assets/img/contact/map.jpg" alt="" class="map">
         </div>
         <div id="footer">
-
+            <div class="social-icon">
+                <i class="ti-facebook"></i>
+                <i class="ti-twitter-alt"></i>
+                <i class="ti-github"></i>
+                <i class="ti-linkedin"></i>
+                <i class="ti-pinterest-alt"></i>
+            </div>
+            <div class="copyright">
+                Powered by <a href="">w3.css</a>    
+            </div>
         </div>
     </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container ">
+            <div class="modal-close js-modal-close">
+                <i class="close-icon ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i class="bag-icon ti-bag"></i>
+                Tickets
+            </div>
+            <div class="modal-body">
+                <label for="How-many" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="How-many" class="modal-input" placeholder="How many?">
+
+                <label for="email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="email" id="email" class="modal-input" placeholder="Enter email">
+
+                <button class="modal-btn">
+                    pay
+                    <i class="ti-check"></i>
+                </button>
+
+                <div class="modal-footer">
+                    <div class="modal-help">
+                        Need <a href="#">help?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const buyTicketBtns = document.querySelectorAll('.js-buy-btn')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        function showBuyTicket() {
+            modal.classList.add('open')
+        }
+
+        function hidenBuyTicket() {
+            modal.classList.remove('open')
+        }
+
+        for ( const buyTicketBtn of buyTicketBtns) {
+            buyTicketBtn.addEventListener('click', showBuyTicket)
+        }
+
+        modalClose.addEventListener('click', hidenBuyTicket)
+        modal.addEventListener('click', hidenBuyTicket)
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+
+    </script>
 </body>
 </html>
