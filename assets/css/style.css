@@ -1,0 +1,516 @@
+/* resset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+#main {
+
+}
+
+#header {
+    background-color: #000;
+    height: 46px;
+    line-height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav {
+    float: left;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav > li:hover .subnav {
+    display: block;
+}
+
+
+.nav > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 24px ;
+    display: block;
+    margin-left: -5px;
+    position: relative;
+    top: 0;
+    left: 0
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+.nav .subnav {
+    display: none;
+    background-color: #fff;
+    margin-left: -5px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav .subnav li {
+    list-style-type: none;
+}
+
+.nav .subnav a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.menu-mobile-btn,
+.search-btn {
+    float: right;
+}
+
+.menu-mobile-btn .menu-mobile-icon,
+.search-btn .search-icon {
+    color: #fff;
+    padding: 0 22px;
+    line-height: 46px;
+}
+
+.menu-mobile-btn .menu-mobile-icon:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.search-btn .search-icon:hover {
+    display: block;
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    padding-top: 50%;
+    background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+    margin-top: 46px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#slider .slider-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 47px;
+}
+
+#slider .slider-content .slogan {
+    font-size: 24px;
+    margin: 25px 0px;
+}
+
+#slider .slider-content .desc {
+    font-size: 15px;
+}
+
+#content {
+    min-height: 200px;
+}
+
+.container-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.container-section .heading {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    margin: 10px 0px;
+    letter-spacing: 4px;
+}
+
+.container-section .subheading {
+    text-align: center;
+    color: #000;
+    opacity: 0.6;
+    font-size: 15px;
+    font-style: italic;
+    margin: 15px 0px;
+}
+
+.band-section .band-content {
+    color: #000;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+
+.band-list {
+    padding: 32px 0px;
+}
+
+.member {
+    width: 33.33333%;
+    float: left; 
+    padding: 0px 53px;
+} 
+
+.member .member-name {
+    margin:15px 0px;
+    text-align: center;
+}
+
+.member .member-img {
+    width: 154px;
+    height: 154px;
+}
+
+.member .member-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-ticket {
+    background-color: #fff;
+    height: 120px;
+}
+
+.month-ticket {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.month-ticket label {
+    opacity: 0.6;
+}
+
+.month-ticket .soldout {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 3px 8px;
+}
+
+.remain-ticket {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+}
+
+.place-list {
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+
+.place-item {
+    width: 33.333%;
+    float: left;
+    padding: 0 8px;
+}
+
+.place-item  img {
+    width: 100%;
+    display: block;
+}
+
+.place-item  img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.place-content {
+    background-color: #fff;
+    padding: 15px 16px;
+}
+
+.place-name {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.place-time {
+    color: #000;
+    opacity: 0.6;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.place-desc {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.place-btn {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
+.place-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* contact */
+
+.contact-container {
+    padding: 32px 0;
+}
+
+.contact-form {
+    float: right;
+    width: 50%;
+}
+
+.contact-info {    
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+
+.contact-info i {
+    margin-right: 15px;
+}
+
+.contact-resume {
+    width: 100%;
+}
+
+.contact-name,
+.contact-email {
+    width: 48%;
+    padding: 8px;
+    font-size: 15px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.contact-name {
+    float: left;
+}
+
+.contact-email {
+    float: right;
+}
+
+.contact-mess input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 15px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.contact-btn .send-mess {
+    margin: 16px 0px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    float: right;
+    border: none;
+    letter-spacing: 1px;
+    height: 38px;
+}
+
+.contact-btn .send-mess:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.map img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/* footer */
+
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+    opacity: 0.6;
+}
+
+#footer .social i {
+    font-size: 24px;
+}
+
+#footer .social i:hover {
+    opacity: 0.6;
+}
+
+#footer .copyright {
+    margin: 15px 0;
+}
+
+#footer .copyright a {
+    color:#000
+}
+
+/* modal buy ticket */
+
+.modal {
+    position: fixed;  
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.3);
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 600px;
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    left:0;
+}
+
+.modal-container > .modal-close {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 8px 16px;
+    height: 52px;
+    width: 45px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.modal-container > .modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-header {
+    height: 130px;
+    background-color: #009688;
+    line-height: 130px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.modal-header .bag-icon {
+    margin-right: 18px;
+}
+
+.modal-body {
+    min-height: 200px;
+    padding: 0 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid#ccc;
+    font-size: 15px;
+}
+
+.modal-btn {
+    width: 100%;
+    height: 54px;
+    margin-top: 24px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+}
+
+.modal-btn:hover,
+.modal-footer .modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-footer {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 16px;
+}
+
+.modal-footer .modal-close {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    height: 39px;
+    margin-top: 32px;
+    float: left;
+}
+
+.modal-footer .modal-help {
+    float: right;
+}
+
+.modal-footer .modal-help a {
+    color: #2196F3;
+}
+
