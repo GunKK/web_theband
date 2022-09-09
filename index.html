@@ -6,157 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.css">
 </head>
 <body>
     <div id="main">
+        <!-- header -->
         <div id="header">
-            <!-- navigation -->
+            <!-- nav -->
             <ul class="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">More <span class="down_icon ti-angle-down"></span> </a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">More <i class="down-icon fa-solid fa-circle-chevron-down"></i></a>
                     <ul class="subnav">
                         <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extra</a></li>
+                        <li><a href="">Extras</a></li>
                         <li><a href="">Media</a></li>
                     </ul>
                 </li>
             </ul>
-            <!-- search_icon  -->
-            <div class="search_btn">
-                <div class="search_icon ti-search"></div>
+            <!-- search btn -->
+            <div class="search-btn">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
             </div>
+            <!-- menu-mobile-icon -->
+            <div class="menu-mobile-btn" id="menu-mobile">
+                <div class="menu-mobile-icon">
+                    <i class="menu-icon fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
+
+        <!-- slider -->
         <div id="slider">
-            <div class="slider_content">
+            <div class="slider-content">
                 <div class="slogan">
-                    New york
+                    Los Angeles
                 </div>
-                <div class="description">
-                    The atmosphere in New York is lorem ipsum.
+                <div class="desc">
+                    We had the best time playing at Venice Beach!
                 </div>
             </div>
         </div>
+
+        <!-- content -->
         <div id="content">
-            <!-- content section -->
-            <div class="content_section">
-                <!-- band content -->
+            <!-- band section -->
+            <div class="band-section container-section" id="band">
                 <div class="heading">
-                    The band
+                    THE BAND
                 </div>
                 <div class="subheading">
-                    I love music
+                    We love music
                 </div>
-                <div class="band_content">
+                <div class="band-content">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
-                <!-- band_member -->
-                <div class="band_member_list">
+                <div class="band-list">
                     <div class="member">
-                        <div class="member_name">
-                            Name
+                        <div class="member-name">
+                            Name 
                         </div>
-                            <img src="./assets/img/content/bandmember.jpg" alt="band_member" title="member" class="member_img">
+                        <div class="member-img">
+                            <img src="./assets/img/band_member/bandmember.jpg" alt="img" title="img">
+                        </div>
                     </div>
                     <div class="member">
-                        <div class="member_name">
-                            Name
+                        <div class="member-name">
+                            Name 
                         </div>
-                            <img src="./assets/img/content/bandmember.jpg" alt="band_member" title="member" class="member_img">
-                    </div> 
+                        <div class="member-img">
+                            <img src="./assets/img/band_member/bandmember.jpg" alt="img" title="img">
+                        </div>
+                    </div>
                     <div class="member">
-                        <div class="member_name">
-                            Name
+                        <div class="member-name">
+                            Name 
                         </div>
-                            <img src="./assets/img/content/bandmember.jpg" alt="band_member" title="member" class="member_img">
-                    </div>                  
+                        <div class="member-img">
+                            <img src="./assets/img/band_member/bandmember.jpg" alt="img" title="img">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
             </div>
             <!-- tour section -->
-            <div class="tour_section">
-                <div class="heading">
-                    TOUR DATES
-                </div>
-                <div class="subheading">
-                    Remember to book your tickets!
-                </div>
-                <!-- ticket box -->
-                <div class="ticket_counter">
-                    <div class="status_ticket">
-                        <span class="month">
-                            Septemper
-                        </span>
-                        <span class="soldout">
-                            Sold out
-                        </span>
+            <div class="tour-section" id="tour">
+                <div class="container-section">
+                    <div class="heading text-white">
+                        TOUR DATES
                     </div>
-                    <div class="status_ticket">
-                        <span class="month">
-                            October
-                        </span>
-                        <span class="soldout">
-                            Sold out
-                        </span>
+                    <div class="subheading text-white">
+                        Remember to book your tickets!
                     </div>
-                    <div class="status_ticket">
-                        <span class="month">
-                            November
-                        </span>
-                        <span class="remain_ticket">
-                            3
-                        </span>
+                    <div class="tour-ticket">
+                        <div class="month-ticket" >
+                            <label> September</label><span class="soldout">Soldout</span>
+                        </div>
+                        <div class="month-ticket" >
+                            <label> October</label><span class="soldout">Soldout</span>
+                        </div>
+                        <div class="month-ticket">
+                            <label> November</label><span class="remain-ticket">3</span>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                </div>
-                <!-- tour place -->
-                <div class="place_section">
-                    <div class="place_list">
-                        <div class="place_item">
-                            <img src="./assets/img/placeTour/newyork.jpg" alt="" class="place_img">
-                            <div class="place_content">
-                                <div class="place_name">
-                                    New york
+
+                    <!-- place  -->
+                    <div class="place-list">
+                        <div class="place-item">
+                            <img src="./assets/img/places/newyork.jpg" alt="" class="place-img">
+                            <div class="place-content">
+                                <div class="place-name">
+                                    New York
                                 </div>
-                                <div class="place_time">
+                                <div class="place-time">
                                     Fri 27 Nov 2016
                                 </div>
-                                <div class="place_decription">
+                                <div class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <button class="place_btn js-buy-btn">Buy Tickets</button>
+                                <button class="place-btn js-ticket-btn">
+                                    Buy Tickets
+                                </button>
                             </div>
                         </div>
-                        <div class="place_item">
-                            <img src="./assets/img/placeTour/paris.jpg" alt="" class="place_img">
-                            <div class="place_content">
-                                <div class="place_name">
+                        <div class="place-item">
+                            <img src="./assets/img/places/paris.jpg" alt="" class="place-img">
+                            <div class="place-content">
+                                <div class="place-name">
                                     Paris
                                 </div>
-                                <div class="place_time">
+                                <div class="place-time">
                                     Sat 28 Nov 2016
                                 </div>
-                                <div class="place_decription">
+                                <div class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <button class="place_btn js-buy-btn">Buy Tickets</button>
+                                <button class="place-btn js-ticket-btn">
+                                    Buy Tickets
+                                </button>
                             </div>
                         </div>
-                        <div class="place_item">
-                            <img src="./assets/img/placeTour/sanfran.jpg" alt="" class="place_img">
-                            <div class="place_content">
-                                <div class="place_name">
+                        <div class="place-item">
+                            <img src="./assets/img/places/sanfran.jpg" alt="" class="place-img">
+                            <div class="place-content">
+                                <div class="place-name">
                                     San Francisco
                                 </div>
-                                <div class="place_time">
+                                <div class="place-time">
                                     Sun 29 Nov 2016
                                 </div>
-                                <div class="place_decription">
+                                <div class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <button class="place_btn js-buy-btn">Buy Tickets</button>
+                                <button class="place-btn js-ticket-btn">
+                                    Buy Tickets
+                                </button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -164,108 +173,130 @@
                 </div>
             </div>
 
-            <div class="contact_section">
+            <!-- contact section -->
+            <div class="container-section" id="contact">
                 <div class="heading">
-                    Contact
+                    CONTACT
                 </div>
                 <div class="subheading">
                     Fan? Drop a note!
                 </div>
-                <div class="contact_content">
-                    <div class="contact_info">
-                        <i class="ti-location-pin"></i> Chicago, US <br>
-                        <i class="ti-mobile"></i> Phone: +00 151515 <br>
-                        <i class="ti-email"></i>  Email: mail@mail.com
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <i class="fa-solid fa-location-dot"></i>Chicago, US <br>
+                        <i class="fa-solid fa-phone"></i>Phone: +00 151515 <br>
+                        <i class="fa-solid fa-envelope"></i>Email: mail@mail.com 
                     </div>
-                    <form action="" method="POST" class="contact_form">
-                        <div class="form-info">
-                            <input type="text" class="contact-name" required placeholder="Name">
-                            <input type="email" class="contact-email" required placeholder="Email">
+                    <div class="contact-form">
+                        <div class="contact-resume">    
+                            <input type="text" placeholder="Name" required class="contact-name">
+                            <input type="email" placeholder="Email" required class="contact-email">
                             <div class="clear"></div>
                         </div>
-                        <input type="text" class="contact-message" required placeholder="Message"> <br>
-                        <input type="submit" value="SEND" class="contact-btn">
-                        <div class="clear"></div>
-                    </form>
+                        <div class="contact-mess">
+                            <input type="text" class="mess-input" placeholder="Message">
+                        </div>
+                        <div class="contact-btn">
+                            <input type="submit" value="SEND" class="send-mess">
+                        </div>
+                    </div>
                     <div class="clear"></div>
                 </div>
             </div>
-            <img src="./assets/img/contact/map.jpg" alt="" class="map">
+            <div class="map">
+                <img src="./assets/img/map/map.jpg" alt="">
+            </div>
         </div>
+        <!-- footer -->
         <div id="footer">
-            <div class="social-icon">
-                <i class="ti-facebook"></i>
-                <i class="ti-twitter-alt"></i>
-                <i class="ti-github"></i>
-                <i class="ti-linkedin"></i>
-                <i class="ti-pinterest-alt"></i>
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-tiktok"></i>
             </div>
             <div class="copyright">
-                Powered by <a href="">w3.css</a>    
+                Power by <a href="#">w3.css</a>
             </div>
         </div>
     </div>
 
     <div class="modal js-modal">
         <div class="modal-container js-modal-container ">
-            <div class="modal-close js-modal-close">
-                <i class="close-icon ti-close"></i>
-            </div>
+            <div class="modal-close js-modal-close"><i class="fa-solid fa-xmark"></i></div>
             <div class="modal-header">
-                <i class="bag-icon ti-bag"></i>
-                Tickets
+                <i class="bag-icon fa-solid fa-suitcase"></i>Tickets
             </div>
             <div class="modal-body">
-                <label for="How-many" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input type="text" id="How-many" class="modal-input" placeholder="How many?">
+                <label for="Howmany" class="modal-label"><i class="fa-solid fa-cart-shopping"></i> Tickets, $15 per person</label>
+                <input type="text" id ="Howmany" class="modal-input" placeholder="How many?" required>
 
-                <label for="email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input type="email" id="email" class="modal-input" placeholder="Enter email">
+                <label for="email" class="modal-label"><i class="fa-solid fa-user"></i> Send To</label>
+                <input type="text" id ="email" class="modal-input" placeholder="Enter email" required>
 
-                <button class="modal-btn">
-                    pay
-                    <i class="ti-check"></i>
-                </button>
-
-                <div class="modal-footer">
-                    <div class="modal-help">
-                        Need <a href="#">help?</a>
-                    </div>
+                <button class="modal-btn">Pay <i class="fa-solid fa-check"></i></button>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-close js-modal-close">Close <i class="fa-solid fa-xmark"></i></button>
+                <div class="modal-help">
+                    Need <a href="#">help?</a>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
-
     <script>
-        const buyTicketBtns = document.querySelectorAll('.js-buy-btn')
+        // button-ticket-modal
+        const ticketBtns = document.querySelectorAll('.js-ticket-btn')
+        const modalCloses = document.querySelectorAll('.js-modal-close')
         const modal = document.querySelector('.js-modal')
-        const modalClose = document.querySelector('.js-modal-close')
         const modalContainer = document.querySelector('.js-modal-container')
 
-        function showBuyTicket() {
+        function show() {
             modal.classList.add('open')
         }
 
-        function hidenBuyTicket() {
+        function hidden() {
             modal.classList.remove('open')
         }
 
-        for ( const buyTicketBtn of buyTicketBtns) {
-            buyTicketBtn.addEventListener('click', showBuyTicket)
+        for (const ticketBtn of ticketBtns) {
+            ticketBtn.addEventListener('click', show)
         }
 
-        modalClose.addEventListener('click', hidenBuyTicket)
-        modal.addEventListener('click', hidenBuyTicket)
-        modalContainer.addEventListener('click', function (event) {
-            event.stopPropagation()
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click', hidden)
+        }
+
+        modal.addEventListener('click', hidden)
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation();
         })
 
+        // moble responsive
+        var header = document.getElementById('header')
+        var menuMobile = document.getElementById('menu-mobile') 
+        var headerHeight = header.clientHeight
+        var listMenu = document.querySelector
+
+        menuMobile.onclick = function() {
+            if (header.clientHeight === headerHeight) {
+                header.style.height = 'auto'
+            }  else {
+                header.style.height = null
+            }
+        }
+
+        var menuItems = document.querySelectorAll('.nav > li > a[href*="#"]')
+        for (var i = 0; i<menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                header.style.height = null
+            }
+        }
     </script>
 </body>
 </html>
