@@ -294,7 +294,12 @@
             var menuItem = menuItems[i];
 
             menuItem.onclick = function() {
-                header.style.height = null
+                var isMenuParent = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+                if (isMenuParent) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null
+                }
             }
         }
     </script>
