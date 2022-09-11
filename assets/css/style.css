@@ -111,7 +111,7 @@ html {
 
 #slider {
     padding-top: 50%;
-    background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
     margin-top: 46px;
     position: relative;
     top: 0;
